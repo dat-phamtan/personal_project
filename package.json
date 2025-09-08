@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://dat-phamtan.github.io/my-own-showcase-22/",
+  "homepage": "https://dat-phamtan.github.io/personal_project/",
   "scripts": {
     "start": "vite",
     "dev": "vite",
