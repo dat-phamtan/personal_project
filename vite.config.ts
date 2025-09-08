@@ -5,9 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? "/my-own-showcase-22/" : "/",
   server: {
     host: "::",
-    port: 3000,
+    port: 8080,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(
     Boolean
@@ -17,6 +18,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // 👇 thêm dòng này
-  base: "/personal_project/",
+  
 }));
